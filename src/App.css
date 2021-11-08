@@ -18,16 +18,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin:auto;
+  margin: auto;
   font-weight: 500;
 }
 
-.top{
+.top {
   height: 50%;
   position: relative;
 }
 
-.timer { 
+.timer {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -42,7 +42,7 @@
   left: 100px;
 }
 
-.bottom{
+.bottom {
   height: 50%;
 }
 
@@ -84,7 +84,8 @@
   margin: 0 10px 20px 10px;
 }
 
-.answer:hover, .answer.active {
+.answer:hover,
+.answer.active {
   background: mediumblue
 }
 
@@ -93,28 +94,45 @@
 }
 
 @keyframes correct {
-  0%, 22%, 42% {
+
+  0%,
+  22%,
+  42% {
     background: mediumblue
   }
-  20%, 40%, 60% {
+
+  20%,
+  40%,
+  60% {
     background: linear-gradient(#0e0124, #22074d);
   }
-  62%, 100% {
+
+  62%,
+  100% {
     background: green
   }
 }
+
 .answer.wrong {
   animation: wrong 3s ease forwards;
 }
 
 @keyframes wrong {
-  0%, 22%, 42% {
+
+  0%,
+  22%,
+  42% {
     background: mediumblue
   }
-  20%, 40%, 60% {
+
+  20%,
+  40%,
+  60% {
     background: linear-gradient(#0e0124, #22074d);
   }
-  62%, 100% {
+
+  62%,
+  100% {
     background: crimson;
   }
 }
